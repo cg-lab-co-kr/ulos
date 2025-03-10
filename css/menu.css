@@ -80,6 +80,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 1.0416vw 0 1.5rem 0;
+  background: #f8f8f8;
 }
 
 .menu-list li:hover img {
@@ -125,18 +126,18 @@
 .reward-item li {
   width: 32%;
   height: 17.8rem;
-  gap: 1.5rem;
+  gap: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--main-color10);
+  background: #f8f8f8;
   border-radius: 10px;
   padding: 0 3rem;
   word-break: keep-all;
 }
 
 .reward-item figure {
-  width: 10rem;
+  width: 7rem;
   aspect-ratio: 1/1;
 }
 
@@ -186,5 +187,11 @@
 @media (max-width: 710px) {
   .reward .sec-title {
     margin-top: 20.4167vw;
+  }
+}
+
+@media (max-width: 434px) {
+  .menu-tab {
+    justify-content: flex-start;
   }
 }

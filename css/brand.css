@@ -17,7 +17,7 @@
   width: 24.6rem;
   height: 15rem;
   position: absolute;
-  background: url(../img/decoration-pic1.svg) no-repeat;
+  background: url(../img/decoration-pic1.png) no-repeat;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -77,17 +77,17 @@
   position: relative;
   cursor: pointer;
   word-break: keep-all;
-  box-shadow: 0px 0px 30px rgba(39, 110, 241, 0.25);
+  box-shadow: 0px 0px 30px rgba(9, 63, 45, 0.25);
 }
 
 .vip-service li:nth-child(1) {
-  background-image: url(../img/vip-pic1.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/brand/img_brand-bg1.jpg);
 }
 .vip-service li:nth-child(2) {
-  background-image: url(../img/vip-pic2.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/brand/img_brand-bg2.jpg);
 }
 .vip-service li:nth-child(3) {
-  background-image: url(../img/vip-pic3.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/brand/img_brand-bg3.jpg);
 }
 
 .vip-service li::after {
@@ -103,7 +103,7 @@
 
 .vip-service li:hover::after {
   content: "";
-  background: var(--main-color);
+  background: var(--main-color70);
 }
 
 .vip-service dl {
@@ -115,7 +115,7 @@
   font-size: 3rem;
   font-weight: 700;
   color: var(--white100);
-  transform: translateY(150%);
+  transform: translateY(100%);
   transition: 0.5s;
 }
 
@@ -161,16 +161,16 @@
 }
 
 .tip-list li:nth-child(1) {
-  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp01.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/b_bg2.jpg);
 }
 .tip-list li:nth-child(2) {
-  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp02.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/b_bg3.jpg);
 }
 .tip-list li:nth-child(3) {
-  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp03.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/b_bg4.jpg);
 }
 .tip-list li:nth-child(4) {
-  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp04.jpg);
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment/custom/images/brand/b_bg5_02.jpg);
 }
 
 .tip-list li:hover {
@@ -187,9 +187,9 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(255, 206, 50, 0),
-    rgba(255, 206, 50, 0),
-    rgba(0, 146, 35, 0.7)
+    rgba(9, 63, 45, 0),
+    rgba(9, 63, 45, 0),
+    rgba(9, 63, 45, 0.7)
   );
 }
 
@@ -272,6 +272,10 @@
   opacity: 1;
 }
 
+.allergie-item figure img {
+  scale: 0.8;
+}
+
 .allergie-item strong {
   position: absolute;
   top: 50%;
@@ -308,21 +312,29 @@
 }
 
 .thanks {
-  background-color: #efefef;
+  background: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/img_slogan.jpg)
+    no-repeat 50% / cover;
   height: 38rem;
 }
 
 .thanks h4 {
-  color: var(--title-color);
+  color: var(--white100);
   font: 5.2rem/1.5 "Pretendard", sans-serif;
   font-size: clamp(4rem, 6vw, 5.2rem);
   padding: 16rem 0;
   text-align: center;
+  word-break: keep-all;
 }
 
-.thanks strong {
-  color: var(--main-color);
-  font: "Poppins", sans-serif;
+.thanks b {
+  font-weight: 700;
+}
+
+@media (max-width: 1520px) {
+  .vip-service {
+    justify-content: flex-start;
+    gap: 5rem;
+  }
 }
 
 @media (max-width: 1440px) {

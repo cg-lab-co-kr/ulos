@@ -289,6 +289,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 0 9.79167vw;
+  padding-right: 12rem;
   position: relative;
   z-index: 10;
 }
@@ -306,8 +307,8 @@ nav::before {
 
 .logo a {
   display: block;
-  width: 20rem;
-  height: 1.5rem;
+  width: 12rem;
+  height: 5rem;
   background: url(../img/logo.svg) no-repeat 0 0 / contain;
 }
 
@@ -573,8 +574,8 @@ footer {
 }
 
 .accredit figure {
-  width: 20rem;
-  height: 1.5rem;
+  width: 12rem;
+  height: 5rem;
 }
 
 .accredit figure img {
@@ -701,6 +702,10 @@ footer {
 
   .gnb.on {
     left: 45.3125vw;
+  }
+
+  nav {
+    padding: 0;
   }
 
   .main-menu {

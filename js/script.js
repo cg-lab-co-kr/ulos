@@ -107,7 +107,7 @@ if ($(".menu-con-slider").length) {
 if ($(".news-swiper").length) {
   const $eventSwiper = new Swiper(".news-swiper", {
     loop: true,
-    slidesPerView: "1",
+    slidesPerView: "1.2",
     spaceBetween: 20,
     autoplay: {
       delay: 1000,
@@ -115,19 +115,11 @@ if ($(".news-swiper").length) {
 
     breakpoints: {
       1300: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-      800: {
-        slidesPerView: 4,
+        slidesPerView: 2.5,
         spaceBetween: 20,
       },
       600: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      375: {
-        slidesPerView: 2,
+        slidesPerView: 1.8,
         spaceBetween: 20,
       },
     },
@@ -261,10 +253,10 @@ if ($(".event-swiper").length) {
   });
 }
 
-/* BUSINESS!!!---------------------------------------------- */
+/* BRAND!!!---------------------------------------------- */
 if ($(".allergie-slider").length) {
   const allergieSwiper = new Swiper(".allergie-slider", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -276,42 +268,21 @@ if ($(".allergie-slider").length) {
     },
 
     breakpoints: {
-      1440: {
+      1550: {
         slidesPerView: 6,
         spaceBetween: 20,
       },
-      700: {
+      768: {
         slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      425: {
+        slidesPerView: 2,
         spaceBetween: 20,
       },
     },
   });
 }
-
-/* MAP!!!---------------------------------------------- */
-
-const $mapSearch = $(".map-search");
-const $btnFold = $(".btn-fold");
-
-// 페이지 로드 시 초기 상태 설정
-$(document).ready(function () {
-  if (window.innerWidth <= 1024) {
-    $mapSearch.addClass("on");
-  }
-});
-
-// 리사이즈 이벤트 처리
-$(window).on("resize", function () {
-  if (window.innerWidth <= 1024) {
-    $mapSearch.addClass("on");
-  } else {
-    $mapSearch.removeClass("on");
-  }
-});
-
-$btnFold.on("click", function () {
-  $mapSearch.toggleClass("on");
-});
 
 // TOP 버튼
 AOS.init();

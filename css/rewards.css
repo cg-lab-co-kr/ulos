@@ -5,23 +5,24 @@
 }
 
 .sns .sns-list {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   /* justify-content: space-between; */
-  justify-content: center;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30.9rem, 1fr));
+  justify-items: center;
   gap: 2rem;
 }
 
 .sns-item {
-  width: 41rem;
+  width: 30.9rem;
   margin-top: 3.125vw;
 }
 
 .sns-item figure {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.343;
   /* height: 30.7rem; */
   border-radius: 10px;
   overflow: hidden;
@@ -35,11 +36,4 @@
   margin-top: 1.0417vw;
   font-weight: 700;
   color: var(--title-color);
-}
-
-.sns-txt p + p {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  margin-top: 0.5rem;
 }
