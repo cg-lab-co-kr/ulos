@@ -213,7 +213,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 9.6rem;
+  margin-top: 6rem;
 }
 
 .tab-item {
@@ -640,7 +640,7 @@ footer {
 
 .visual-title h2 {
   font: 9.6rem/1.2 "Poppins", sans-serif;
-  font-size: clamp(5.5rem, 11.1146vw, 17.5rem);
+  font-size: clamp(5rem, 11.1146vw, 17.5rem);
   font-weight: 700;
 }
 

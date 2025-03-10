@@ -108,7 +108,7 @@
 }
 
 .reward {
-  margin: 6.25vw 0;
+  margin: 12rem 0;
 }
 
 .tab-item {
@@ -117,7 +117,7 @@
 
 .reward-item {
   /* margin-top: 3rem; */
-  margin-top: 1.5625vw;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   gap: 2rem;

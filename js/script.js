@@ -107,7 +107,7 @@ if ($(".menu-con-slider").length) {
 if ($(".news-swiper").length) {
   const $eventSwiper = new Swiper(".news-swiper", {
     loop: true,
-    slidesPerView: "1.2",
+    slidesPerView: "1.1",
     spaceBetween: 20,
     autoplay: {
       delay: 1000,
@@ -194,63 +194,6 @@ function rewardTabAction(index) {
 
   $rewardTabCon.hide();
   $rewardTabCon.eq(index).show();
-}
-
-/* REWARDS!!!---------------------------------------------- */
-
-// event swiper(MAIN)
-const $eventTabMenu = $(".event-tab > li");
-const $eventTabCon = $(".event-list");
-
-$eventTabCon.hide();
-$eventTabCon.eq(0).show();
-$eventTabMenu.eq(0).find("a").addClass("on");
-
-$eventTabMenu.on("click", function (e) {
-  e.preventDefault();
-
-  const eventTabIdx = $(this).index();
-
-  $eventTabMenu.find("a").removeClass("on");
-  $(this).find("a").addClass("on");
-
-  $eventTabCon.hide();
-  $eventTabCon.eq(eventTabIdx).show();
-
-  if (eventTabIdx === 0 && window.eventSwiper) {
-    window.eventSwiper.update();
-  }
-});
-
-if ($(".event-swiper").length) {
-  const $eventSwiper = new Swiper(".event-swiper", {
-    loop: true,
-    slidesPerView: "2",
-    spaceBetween: 20,
-    autoplay: {
-      delay: 1000,
-    },
-
-    breakpoints: {
-      1440: {
-        slidesPerView: 7.5,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-      425: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-
-    pagination: {
-      el: ".event-list .swiper-pagination",
-      type: "fraction",
-    },
-  });
 }
 
 /* BRAND!!!---------------------------------------------- */
