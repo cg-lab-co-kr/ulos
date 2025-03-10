@@ -4,13 +4,12 @@
 
 :root {
   font-size: 62.5%;
-  --main-color: #b5936f;
-  --main-color80: rgba(181, 147, 111, 0.8);
-  --main-color70: rgba(181, 147, 111, 0.7);
-  --main-color60: rgba(181, 147, 111, 0.6);
-  --main-color30: rgba(181, 147, 111, 0.3);
-  --main-color20: rgba(181, 147, 111, 0.2);
-  --main-color10: rgba(181, 147, 111, 0.1);
+  --main-color: #093f2d;
+  --main-color70: rgba(9, 63, 45, 0.7);
+  --main-color60: rgba(9, 63, 45, 0.6);
+  --main-color30: rgba(9, 63, 45, 0.3);
+  --main-color20: rgba(9, 63, 45, 0.2);
+  --main-color10: rgba(9, 63, 45, 0.1);
   --title-color: #272727;
   --text-color: #666666;
   --white100: rgba(255, 255, 255, 1);
@@ -500,6 +499,10 @@ nav::before {
 
 /* footer */
 
+footer {
+  overflow: hidden;
+}
+
 .foot-list {
   display: flex;
   justify-content: space-between;
@@ -616,8 +619,6 @@ nav::before {
 
 /* 서브 비쥬얼 타이틀 공용! */
 .visual {
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
 }
 

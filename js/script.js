@@ -182,27 +182,27 @@ $menuItem.on("click", function () {
   $(menuList).find($menuItem).stop().slideToggle(duration);
 });
 
-const $question = $(".info-wrap > ul > li");
-const $answer = $(".answer-wrap");
+const $rewardTabMenu = $(".reward-tab > li");
+const $rewardTabCon = $(".reward-list");
 
-$question.on("click", function () {
-  // 🚩 $(this)로 구별, siblings()
+rewardTabAction(0);
 
-  // 선택한 놈을 기준으로, 다른 놈들은 on클래스 삭제
-  $(this).siblings().removeClass("on");
+$rewardTabMenu.on("click", function (e) {
+  e.preventDefault();
 
-  // $(this).addClass("on");
-  // 선택한 놈을 기준으로 on클래스를 토글
-  $(this).toggleClass("on");
+  const rewardTabIdx = $(this).index();
+  console.log(rewardTabIdx);
 
-  // 선택한 놈의 형제, 하위에 있는 답변은 올리고
-  // stop()  <-- 여러개 예약되어 있어도 한 번만 작동
-  $(this).siblings().find($answer).stop().slideUp(duration);
-
-  // $(this).find($answer).slideDown(duration);
-  // 선택한 놈의 자손중 답변을 찾아서 슬라이드 토글
-  $(this).find($answer).stop().slideToggle(duration);
+  rewardTabAction(rewardTabIdx);
 });
+
+function rewardTabAction(index) {
+  $rewardTabMenu.find("a").removeClass("on");
+  $rewardTabMenu.eq(index).find("a").addClass("on");
+
+  $rewardTabCon.hide();
+  $rewardTabCon.eq(index).show();
+}
 
 /* REWARDS!!!---------------------------------------------- */
 
