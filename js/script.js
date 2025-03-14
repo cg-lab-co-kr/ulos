@@ -231,7 +231,6 @@ if ($(".allergie-slider").length) {
 AOS.init();
 
 const btnTop = document.querySelector(".btn-top");
-const btnTalk = document.querySelector(".btn-talk");
 const html = document.documentElement;
 const htmlPos = html.scrollHeight / 2;
 
@@ -240,9 +239,7 @@ window.addEventListener("scroll", function () {
 
   if (scrollTop >= htmlPos) {
     btnTop.classList.add("active");
-    btnTalk.classList.add("active");
   } else {
     btnTop.classList.remove("active");
-    btnTalk.classList.remove("active");
   }
 });
